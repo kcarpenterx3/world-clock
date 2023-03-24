@@ -1,25 +1,25 @@
 function updateTime() {
-  //Denver
-  let denverElement = document.querySelector("#denver");
-  let denverDateElement = denverElement.querySelector(".date");
-  let denverTimeElement = denverElement.querySelector(".time");
-  let denverTime = moment().tz("American/Denver");
+  //New York
+  let newYorkElement = document.querySelector("#new_york");
+  let newYorkDateElement = newYorkElement.querySelector(".date");
+  let newYorkTimeElement = newYorkElement.querySelector(".time");
+  let newYorkTime = moment().tz("American/New_York");
 
-  denverDateElement.innerHTML = moment().format("MMMM Do, YYYY");
-  denverTimeElement.innerHTML = `${denverTime.format(
+  newYorkDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+  newYorkTimeElement.innerHTML = `${newYorkTime.format(
     "h:mm:ss"
-  )}<small> ${denverTime.format("A")}</small>`;
+  )}<small> ${newYorkTime.format("A")}</small>`;
 
   //Halifax
-  let halifaxElement = document.querySelector("#halifax");
-  let halifaxDateElement = halifaxElement.querySelector(".date");
-  let halifaxTimeElement = halifaxElement.querySelector(".time");
-  let halifaxTime = moment().tz("American/Halifax");
+ // let halifaxElement = document.querySelector("#halifax");
+  //let halifaxDateElement = halifaxElement.querySelector(".date");
+  //let halifaxTimeElement = halifaxElement.querySelector(".time");
+ // let halifaxTime = moment().tz("American/Halifax");
 
-  halifaxDateElement.innerHTML = moment().format("MMMM Do, YYYY");
-  halifaxTimeElement.innerHTML = `${halifaxTime.format(
-    "h:mm:ss"
-  )}<small> ${halifaxTime.format("A")}</small>`;
+ // halifaxDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+ // halifaxTimeElement.innerHTML = `${halifaxTime.format(
+ //   "h:mm:ss"
+ // )}<small> ${halifaxTime.format("A")}</small>`;
 }
 
 function updateCity(event) {
