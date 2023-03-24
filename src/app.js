@@ -1,14 +1,25 @@
 function updateTime() {
-  //Paris
-  let parisElement = document.querySelector("#paris");
-  let parisDateElement = parisElement.querySelector(".date");
-  let parisTimeElement = parisElement.querySelector(".time");
-  let parisTime = moment().tz("Europe/Paris");
+  //Denver
+  let denverElement = document.querySelector("#denver");
+  let denverDateElement = denverElement.querySelector(".date");
+  let denverTimeElement = denverElement.querySelector(".time");
+  let denverTime = moment().tz("American/Denver");
 
-  parisDateElement.innerHTML = moment().format("MMMM Do, YYYY");
-  parisTimeElement.innerHTML = `${parisTime.format(
+  denverDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+  denverTimeElement.innerHTML = `${denverTime.format(
     "h:mm:ss"
-  )}<small> ${parisTime.format("A")}</small>`;
+  )}<small> ${denverTime.format("A")}</small>`;
+
+  //Halifax
+  let halifaxElement = document.querySelector("#halifax");
+  let halifaxDateElement = halifaxElement.querySelector(".date");
+  let halifaxTimeElement = halifaxElement.querySelector(".time");
+  let halifaxTime = moment().tz("American/Halifax");
+
+  halifaxDateElement.innerHTML = moment().format("MMMM Do, YYYY");
+  halifaxTimeElement.innerHTML = `${halifaxTime.format(
+    "h:mm:ss"
+  )}<small> ${halifaxTime.format("A")}</small>`;
 }
 
 function updateCity(event) {
