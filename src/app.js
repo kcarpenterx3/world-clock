@@ -10,16 +10,6 @@ function updateTime() {
     "h:mm:ss"
   )}<small> ${newYorkTime.format("A")}</small>`;
 
-  //Halifax
- // let halifaxElement = document.querySelector("#halifax");
-  //let halifaxDateElement = halifaxElement.querySelector(".date");
-  //let halifaxTimeElement = halifaxElement.querySelector(".time");
- // let halifaxTime = moment().tz("American/Halifax");
-
- // halifaxDateElement.innerHTML = moment().format("MMMM Do, YYYY");
- // halifaxTimeElement.innerHTML = `${halifaxTime.format(
- //   "h:mm:ss"
- // )}<small> ${halifaxTime.format("A")}</small>`;
 }
 
 function updateCity(event) {
